@@ -2,7 +2,7 @@ const accountId = 123456;
 let accountEmail = "ak6202292434@gmail.com";
 var accountPassword = 147852369;
 let accountCity = "Patna";
-let city;
+let city;   //undifine hoti hai
 
 accountCity = "Mumbai"
 
