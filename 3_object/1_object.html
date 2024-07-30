@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //singleton
+        //object.craete
+
+
+         //object literals
+        //object literals
+        const mySym = Symbol("key1");
+        const user ={
+            [mySym] : "mykey1",
+            name : "Aadesh",
+            village : "Kodariya",
+            post : "Lalpur",
+            via : "Manik Chaouk",
+            pin : 84332,
+            "fullname" : "Aadesh kumar"
+            
+        }
+        //console.log(user.name);
+        //console.log(user["name"]);
+       // console.log(user["fullname"]);
+        //console.log(user[mySym]);
+        //object.freeze(user);
+        //user.name = "Pooja";
+        //console.log(user);
+
+        user.greeting = function(){
+            console.log(`Hello Js usser() `);
+    
+        }
+        user.greetingtwo = function(){
+            console.log(`Hello Js usser ${this.name}`);
+    
+        }
+        console.log(user.greeting());
+        console.log(user.greetingtwo());
+         
+
+    </script>
+</body>
+</html>
